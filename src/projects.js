@@ -53,30 +53,14 @@ class Projects {
   </a>
 </div>
 
-<div class="card-projects">
-<a href="http://presition.forpelindo.com/2021" class="link-none">
-<img src="${require('./feez-01.png')}"/>
-  <h4>FeezFest 2022 - FLC</h4>
-  <h5 class="card-projects-description"><strong class="anim-text-primary">Under Development</strong> Computer Science Logic event landing page</h5>
-  </a>
-</div>
-
-
-<div class="card-projects">
-<a href="http://presition.forpelindo.com/2021" class="link-none">
-<img src="${require('./feez-01.png')}"/>
-  <h4>FeezFest 2022 - FCPL</h4>
-  <h5 class="card-projects-description"><strong class="anim-text-primary">Under Development</strong> Competitive Programming event landing page</h5>
-  </a>
-</div>
-</div>`;
+`;
   }
 
   websiteApps(){
     return`
     <div data-aos="zoom-in-up">
     <div class="card-projects" >
-    <a href="https://cbt.forpelindo.com/2021" class="link-none">
+    <a href="https://cbt.forpelindo.com" class="link-none">
     <img src="${require('./cbt-forpelindo.png')}"/>
       <h4>Computer Based Test (CBT) System Forpelindo</h4>
       <h5 class="card-projects-description">Online Examination Platform. (Including Administrator System)</h5>
@@ -111,7 +95,7 @@ class Projects {
       </a>
     </div>
     <div class="card-projects">
-    <a href="https://abdanhafidz.com/qb" class="link-none">
+    <a href="#" class="link-none">
     <img src="${require('./quzuu.png')}"/>
       <h4>Quzuu Online Examination Platform</h4>
       <h5 class="card-projects-description">Self-developed platform, used in organizing try outs, practice questions, quizzes</h5>
@@ -140,6 +124,27 @@ class Projects {
     <img src="${require('./e-tugas.png')}"/>
       <h4>Aplikasi Tugas Online</h4>
       <h5 class="card-projects-description">Online Assignment Website</h5>
+      </a>
+    </div>
+    <div class="card-projects">
+    <a href="https://kelasfeez.id" class="link-none">
+    <img src="${require('./feez-01.png')}"/>
+      <h4>Feez Edutech Platform</h4>
+      <h5 class="card-projects-description"> potential education and skill development platform</h5>
+      </a>
+    </div>
+    <div class="card-projects">
+    <a href="https://mabacup-its.com/" class="link-none">
+    <img src="https://mabacup-its.com/favicon.ico"/>
+      <h4>MabaCUP ITS 2023 (Backend)</h4>
+      <h5 class="card-projects-description"> Building Rest API with Express TS, Prisma ORM, and MYSQL</h5>
+      </a>
+    </div>
+    <div class="card-projects">
+    <a href="https://github.com/abdanhafidz/anime-list-front-end/tree/master/main" class="link-none">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/MyAnimeList_-_Full_Text_Logo.jpg"/>
+      <h4>My Anime List.net's API Consume</h4>
+      <h5 class="card-projects-description"> Consume My Anime List.net's API with NEXT TS and View it with TSX</h5>
       </a>
     </div>
     </div>`;
@@ -184,13 +189,23 @@ companyweb(){
     </a>
   </div>
   <div class="card-projects">
-  <a href="https://abdanhafidz.com/qb" class="link-none">
+  <a href="https://kelasfeez.id" class="link-none">
   <img src="${require('./feez-01.png')}"/>
     <h4>Feez Edutech Platform</h4>
-    <h5 class="card-projects-description"><strong class="anim-text-primary">Under Development</strong> potential education and skill development platform</h5>
+    <h5 class="card-projects-description"> potential education and skill development platform</h5>
     </a>
   </div>
-  
+
+
+
+<div class="card-projects">
+<a href="http://www.olympiagoldacademy.com/" class="link-none">
+<img src="https://olympiagoldacademy.com/_public/assets/img/content/1.png"/>
+  <h4>Olympia Gold Academy</h4>
+  <h5 class="card-projects-description"> Competitive Programming event landing page</h5>
+  </a>
+</div>
+</div>
   
   </div>`;
 }

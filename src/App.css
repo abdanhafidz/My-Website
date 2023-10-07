@@ -214,8 +214,8 @@ p{
   animation:cir2 2.2s infinite;
 }
 .sub-bar-img img{
-  width:80px;
-  height:80px;
+  width:55px;
+  height:55px;
 }
 .skills-title{
   font-size:20pt;
@@ -401,26 +401,56 @@ transition:all 0.3s ease-in-out;
   margin-left:50px;
 }
 @keyframes nav-link-anim{
-  from{
-    transform:translateX(230px);
+  0%{
+    transform:scaleY(0%);
   }
-  to{
-    transform:translateX(-0px);
+  25%{
+    transform:scaleY(25%);
+  }
+  50%{
+    transform:scaleY(50%);
+  }
+  75%{
+    transform:scaleY(75%);
+  }
+  100%{
+    transform:scaleY(100%);
   }
 }
 @keyframes nav-link-anim-close{
   from{
-    transform:translateX(-0px);
+    transform:translateY(-0px);
   }
   to{
     transform:translateX(230px);
   }
 }
  
-@media(max-width:759px){
+@media(max-width:860px){
+  .fit{
+    padding:0!important;
+    max-width:fit-content!important
+  }
 .nav-link-hide{
   display:none!important; 
-  animation:nav-link-anim-close 0.4s linear;
+  animation:nav-link-anim-close 0.2s linear;
+}
+.card-projects img{
+  width:100%!important;
+  height:auto!important;
+}
+
+.btn-white-oval{
+  background: #FCF9F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  color:#161616;
+  width:172px;
+  padding:5px;
+  font-size:11pt;
+  font-weight:bolder;
+  border:none;
+  transition:all 0.3s ease-in;
 }
 .radio-text{
   
@@ -436,9 +466,11 @@ transition:all 0.3s ease-in-out;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
-  background-color: #2d303d;
+  background-color: #333541;
   margin-top:0;
-  animation : nav-link-anim 0.4s linear;
+  animation : nav-link-anim 0.2s linear;
+  border-top: 1.3px solid #40465f7a;
+  box-shadow: 0px 4px 10px 0px #6161614f;
 }
 .navbar-brand img{
   margin-top:7px!important;
@@ -447,6 +479,7 @@ transition:all 0.3s ease-in-out;
   display:block!important;
   background-color: #2d303d!important;
   margin-bottom:0;
+  z-index:10;
 }
   .dynamic-middle{
     margin-left:auto;
@@ -458,7 +491,7 @@ transition:all 0.3s ease-in-out;
   }
 
   .cp h1, .infor h1, .cr h1{
-    font-size:17pt;
+    font-size:12pt;
   }
   .second-section{
     margin-top:30px!important;
@@ -470,13 +503,15 @@ transition:all 0.3s ease-in-out;
     font-size: 15px;
   }
   .sub-bar-img{
-    margin-top:0;
-    display: flex;
+    margin-top:10px;
+    margin-left:0!important;
+    display: block;
   }
 
   .sub-bar-img img{
     width:30px;
     height:30px;
+  
   }
 
   .bar-cp{
@@ -536,7 +571,7 @@ font-weight:1000;
 
 .code-pro{
   background-color: #80e767;
-  width: 500px;
+  width: 800px;
   margin-left: auto;
   font-family: Courier New;
   margin-right: auto;
@@ -544,10 +579,14 @@ font-weight:1000;
   border-radius: 10px;
   color: #2a584d;
 }
-@media(max-width:759px){
+@media(max-width:860px){
+  .sub-bar{
+    display:block;
+  }
+  
   .code-pro{
     background-color: #80e767;
-    width: 300px;
+    width: 200px;
     margin-left: auto;
     font-family: Courier New;
     margin-right: auto;
@@ -559,7 +598,8 @@ font-weight:1000;
     padding:15px;
   }
   .card-projects{
-    width:200px!important;
+    width:auto!important;
+    height:250px!important;
   }
   .second-section{
     padding:20px!important;
@@ -595,29 +635,32 @@ font-weight:1000;
   }
 
   .skills-title{
-    font-size:15pt;
+    font-size:11pt;
   }
+.middle{
+  padding:5px;
+}
 h1{
-font-size:20pt;
+font-size:15pt;
 }
 h2{
-  font-size:18pt;
-}
-h3{
-  font-size:15pt;
-}
-h4{
   font-size:13pt;
 }
-h5{
+h3{
   font-size:12pt;
 }
+h4{
+  font-size:11pt;
+}
+h5{
+  font-size:10pt;
+}
 .title-name{
-  font-size:20pt;
+  font-size:15pt;
   text-align:center;
 }
 p{
-  font-size:11pt;
+  font-size:8pt;
   line-height:2.0;
 }
 }
@@ -687,7 +730,7 @@ cursor:pointer;
       }
 @media(min-width:760px){
   .middle-sub-4,.middle-sub-6{
-    padding:30px;
+    padding:10px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -697,7 +740,7 @@ display:inline-block;
 }
 
 .middle-sub-4{
-  max-width:33.33%;
+  max-width:33.34%;
   display:inline-block;
 }
   .cp{
@@ -770,21 +813,22 @@ p{
 }
 }
 
-.navbar{
-
-position: fixed;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-background: rgba(53, 56, 71, 0.58);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-width:100%;
-height:69px;
-display:flex;
+.navbar {
+  background: rgb(53 56 71 / 0%);
+  bottom: 0;
+  display: flex;
+  height: 69px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px solid #5b6d7457;
+  z-index:10;
 }
 .navbar-scrolled{
-  background: rgba(53, 56, 71, 0.911);
+  background: rgb(53, 56, 71);
+  z-index:10;
 }
 .navbar-brand{
   margin-top:7px;
@@ -820,9 +864,9 @@ display:flex;
   background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(255 255 255) 8%, rgb(45 48 61) 92%, rgba(80,80,80,0) 100%);
   
-  z-index: 5;
+  z-index: 0;
 }
 
 .timeline li {
@@ -858,10 +902,9 @@ display:flex;
 }
 .card-projects{
   top:0;
-width:300px;
-display:inline-block;
-min-height:200px;
-max-height:700px;
+width:25%;
+display:inline-flex;
+height:300px;
 background: rgba(255, 255, 255, 0.05);
 border-radius: 6px;
 padding:20px;
@@ -901,8 +944,8 @@ a:-webkit-any-link {
   z-index:20000;
 }
 .card-projects img{
-  max-width: 100%;
-  width: 500px; 
+  width:100%;
+  height:130px;
   border-radius:7px;
   
 }
@@ -1078,6 +1121,7 @@ a .text-white :hover{
   font-size:12pt;
   line-height:normal;
   opacity:70%;
+  
 }
 
 .direction-r .desc {
@@ -1164,11 +1208,11 @@ a .text-white :hover{
 	position: relative;
 	margin: 1em 0 0 0;
 	padding: 1em;
-	background: rgba(105, 103, 103, 0.253);
+	background: rgb(83 85 101);
 	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
 	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
 	box-shadow: 0 0 1px rgba(0,0,0,0.20);
-	
+	opacity:100%;
   z-index: 15;
 }
 

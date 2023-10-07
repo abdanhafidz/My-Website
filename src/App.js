@@ -66,22 +66,6 @@ function LandingpageMain(){
 </a>
 </div>
 
-<div className="card-projects">
-<a href="http://presition.forpelindo.com/2021" className="link-none">
-<img src={require('./feez-01.png')}/>
-<h4>FeezFest 2022 - FLC</h4>
-<h5 className="card-projects-description"><strong className="anim-text-primary">Under Development</strong> Computer Science Logic event landing page</h5>
-</a>
-</div>
-
-
-<div className="card-projects">
-<a href="http://presition.forpelindo.com/2021" className="link-none">
-<img src={require('./feez-01.png')}/>
-<h4>FeezFest 2022 - FCPL</h4>
-<h5 className="card-projects-description"><strong className="anim-text-primary">Under Development</strong> Competitive Programming event landing page</h5>
-</a>
-</div>
 </div>
 </div>
 );
@@ -95,7 +79,7 @@ function Port(){
 	<li data-aos="zoom-in-up" data-aos-duration="1000">
 		<div className="direction-r" >
 			<div className="flag-wrapper">
-				<span className="flag">Full-Stack Developer</span>
+				<span className="flag">Chief Technology Officer</span>
 				<span className="time-wrapper"><span className="time">2020 - Present</span></span>
 			</div>
 			<div className="desc">At <a className="text-white" href="https://forpelindo.com"><strong>Yayasan Pelatihan Sains Pelajar Indonesia</strong></a>
@@ -125,7 +109,7 @@ a forum that focuses on education as a provider of information, a forum for the 
 				<span className="flag">Founder</span>
 				<span className="time-wrapper"><span className="time">2021 - Present</span></span>
 			</div>
-			<div className="desc"><a className="text-white" href="https://abdanhafidz.com/qb"><strong>The Quzuu Exam Platform</strong></a> self-developed platform, used in organizing try outs, practice questions, quizzes . Has been used in organizing the National Science Competition Try Out in Informatics</div>
+			<div className="desc"><a className="text-white" href="#"><strong>The Quzuu Exam Platform</strong></a> self-developed platform, used in organizing try outs, practice questions, quizzes . Has been used in organizing the National Science Competition Try Out in Informatics</div>
 		</div>
 	</li>
   
@@ -136,9 +120,9 @@ a forum that focuses on education as a provider of information, a forum for the 
 		<div className="direction-l">
 			<div className="flag-wrapper">
 				<span className="flag">CEO & Founder</span>
-				<span className="time-wrapper"><span className="time">Coming Soon</span></span>
+				<span className="time-wrapper"><span className="time">2022 - Present</span></span>
 			</div>
-			<div className="desc"><a className="text-white" href="#"><strong>Feez Edutech Platform</strong></a> potential education and skill development platform
+			<div className="desc"><a className="text-white" href="https://kelasfeez.id"><strong>Feez Edutech Platform</strong></a> potential education and skill development platform
 for students in Indonesia in the field of technology and digital innovation.</div>
 		</div>
 	</li>
@@ -168,7 +152,7 @@ function Home() {
        <div className="first-section">
     <h1 className="title-name" data-aos="fade-up" data-aos-duration="1000">Hi I 'm Abdan Hafidz</h1>
     <h1 className="title-name" data-aos="fade-up" data-aos-duration="1000">Junior Website Developer</h1>
-    <div className="dynamic-middle"> <a href="#more"><button className="btn-primary">More About Me</button></a></div>
+    <div className="dynamic-middle"> <a href="#about"><button className="btn-primary">More About Me</button></a></div>
      
     </div>
     <div className="grid1"></div>
@@ -181,7 +165,7 @@ function Home() {
         
         </div>
         <div className="infor">
-        <h1 className="text-info title-name"><li>Informatics Olympiad</li> </h1>
+        <h1 className="text-info title-name"><li>A.I Engineering</li> </h1>
         
         
         
@@ -198,9 +182,10 @@ function Home() {
 
     </div>
   <div className="second-section" id="about">
-    <h1 align="center" className="title-name" data-aos="flip-left"     data-aos-duration="1000">Abdan Hafidz, Glad To See You! <p align="center" className="code-pro">🎓 SMAN 58 JAKARTA | 💬 INDONESIA & ENGLISH  </p></h1>
+    <h1 align="center" className="title-name" data-aos="flip-left"     data-aos-duration="1000">Abdan Hafidz, Glad To See You! 
+    <p align="center" className="code-pro">🎓 A.I Engineering Sepuluh Nopember Institute | 💬 INDONESIA & ENGLISH  </p></h1>
 
-    <p align="center" className="text-primary"  data-aos="fade-right" data-aos-duration="1000">For more or less 3 years I have explored my coding skills to the end to pursue website development and the last 2 years I have worked in several institutions in the section of website development, IT division, full-stack development. And since I was in high school, I began to deepen my abilities in the field of computer science, until in the end I often won several National level competitions in the field of computer science or better known as Informatics in my country. I often have fun on the competitive programming platforms codeforces, atcoder, TLX, Vjduges and others. Not infrequently I also take part in National competitions with competitive programming categories and website design :) I do social media content creating too.</p>
+    <p align="center" className="text-primary"  data-aos="fade-right" data-aos-duration="1000">For more than 4 years I have explored my coding skills to the end to pursue website development and the last 2 years I have worked in several institutions in the section of website development, IT division, full-stack development. And since I was in high school, I began to deepen my abilities in the field of computer science, until in the end I often won several National level competitions in the field of computer science or better known as Informatics in my country. I often have fun on the competitive programming platforms codeforces, atcoder, TLX, Vjduges and others. Not infrequently I also take part in National competitions with competitive programming categories and website design :) I do social media content creating too.</p>
     <div className="middle ctc" align="center">
       <div className="middle-sub-4">
       
@@ -235,26 +220,43 @@ function Home() {
       <div className="bar-be"></div>
     <div className="sub-bar-img"> 
     <img src={require('./php.png')} />
-    <img src={require('./js.png')} />
+    <img src={require('./ts.png')} />
     <img src={require('./be-3.png')} />
     <img src={require('./mysql.png')} />
-    
+    <img src={require('./ci.png')} />
+    <img src={require('./exp.png')} />
+    <img src={require('./prisma.png')} />
+    <img src={require('./pgree.png')} />
+    <img src={require('./py.png')} />
+    <img src={require('./lara.png')} />
+    <img src={require('./go.png')} />
     </div>
 
 
 </div>
+<h2 className="skills-title">Dev Ops</h2>
+    <div className="sub-bar">
+      <div className="bar-fe"></div>
+    <div className="sub-bar-img"> 
+    <img src={require('./github.png')} />
+    <img src={require('./docker.png')} />
+    </div>
 
+
+</div>
 
 <h2 className="skills-title">Frontend-Development</h2>
     <div className="sub-bar"><div className="bar-fe"></div>
     <div className="sub-bar-img"> 
     <img src={require('./fe-1.png')} />
     <img src={require('./fe-2.png')} />
+    <img src={require('./ts.png')} />
     <img src={require('./jquery.png')} />
     <img src={require('./wp.png')} />
+    <img src={require('./next.png')} />
     </div>
     </div>
-    <h2 className="skills-title">Graphic Design</h2>
+    <h2 className="skills-title">Graphic & UI/UX Design</h2>
     <div className="sub-bar"><div className="bar-gd"></div>
     <div className="sub-bar-img"> 
     <img src={require('./gd-1.png')} />
@@ -269,15 +271,7 @@ function Home() {
     <h1 className="title-name title-port"  align="center">Portfolio</h1>
   
     <Port></Port>
-  
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br><br></br>
-<br></br>
-<br></br>
+
 
 <div className="middle-sub-6" id="projects">
 <h1 className="title-name" >My Projects</h1>
@@ -297,10 +291,10 @@ function Home() {
 </div>
 <div className="radio-group">
 <div className="radio-projects"></div> 
-<div className="radio-text">Fun & Creative Games</div>
+<div className="radio-text">Creative</div>
 </div>
       </div>
-      <div className="middle-sub-6 fit" id="pro-dom">
+      <div className="middle-sub-4 fit" id="pro-dom">
      <LandingpageMain></LandingpageMain>
             
            
@@ -319,7 +313,7 @@ function Home() {
   </div>
   <div className="first-section services">
   <h1 align="center" className="title-name">Get In Touch</h1>
-  <p align="center">Although I’m not currently looking for any new opportunities, my inbox is always open. <br></br>Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+  <p align="center">I'm currently looking for any new opportunities, my inbox is always open. <br></br>Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
   <br></br>
  
   <div className="btn-middle">
@@ -357,6 +351,7 @@ function About() {
     </>
   );
 }
+
 class App extends  React.Component  { 
   
   ShowNavMobile(){
@@ -378,12 +373,12 @@ class App extends  React.Component  {
       target.classList.add("subnav-hide");
     }
   }
+  
   render(){
-    
     return(
     <div className="sabeb">
   
-    <div className="navbar">
+    <div className="navbar" id="navbar">
     <Link className="navbar-brand" to="." ><img src={'./logo.png'} /></Link>
  
     <div className="nav-link nav-link-hide" id="navlink">
@@ -486,5 +481,6 @@ function createRipple(e)
   
   circle.classList.add('ripple');
 }
+
 
 export default App;

@@ -42,5 +42,21 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+
+window.onscroll = function () { 
+  var myNav = document.getElementById('navbar');
+var scr = window.scrollY;
+console.log(scr)
+    if(scr >= 200){
+      myNav.classList.add("navbar-scrolled");
+    }else{
+      myNav.classList.remove("navbar-scrolled");
+    }
+};
+
+
+
+</script>
   </body>
 </html>

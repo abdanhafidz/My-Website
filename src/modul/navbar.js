@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 class Navbar{
+    
     render(){
+        const scr = window.scrollY
+        if(scr >= 500){
+           const classState = "navbar navbar-scrolled";
+        }else{
+            const classState = "navbar";
+        }
         return (
-            <div className="navbar">
+            <div className={classState} id="navbarScroll">
+                
             <div className="nav-link">
                   <div className="nav-item">
                     <a href="about/">About Me</a>
